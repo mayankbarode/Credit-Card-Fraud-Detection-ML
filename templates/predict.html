@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>z
+</head>
+<body>
+ <div class="ml-container">
+      <p style="text-align: center">
+        Enter the 30 feature values in the below cell(in order):
+      </p>
+
+      <form action="{{ url_for('predict')}}" method="POST">
+        <div class="justify">
+          <textarea name="message" rows="8" cols="50"></textarea>
+        </div>
+          <br/>
+
+        <input type="submit" class="btn-info" value="Predict" />
+      </form>
+    </div>
+
+</body>
+</html>
